@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body, html{
+    /* overflow-x: hidden; */
+}
+.nav {
+    height: 70px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    margin-top: -70px;
+    z-index: 45;
+}
+
+.nav .logo span {
+    color: red;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.nav  .menulist ul{
+    display: flex;
+    gap: 40px;
+}
+.nav .menulist ul li{
+   list-style: none;
+}
+.nav .menulist ul li a {
+    text-decoration: none;
+    justify-content: space-between;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav #login i{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.nav #login button {
+    height: 30px;
+    width: 70px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.nav #search input {
+    height: 35px;
+    width: 200px;
+    border: 1px solid ;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.nav #search input::placeholder {
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+   
+}
+.nav #search i {
+    font-size: 20px;
+}
+.nav .ham i {
+    font-size: 20px;
+    margin-left: -40px;
+    display:none;
+    cursor: pointer;
+}
+.nav main {
+    display: none;
+}
+.section {
+    width: 100%;
+    margin-top: 70px;
+}
+
+/* Product section */
+h1 {
+    text-align: center;
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+}
+.container1 h1 {
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+
+.container1 img {
+    height: 200px;
+    width: 230px;
+    border-radius: 5px;
+}
+
+.container1 img:hover {
+   transform: scale(1.1);
+   transition: 0.5s ease;
+}
+
+.container1 button {
+    height: 40px;
+    width: 130px;
+    border-radius: 7px;
+    background-color: rgb(217, 192, 49);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+section #img img {
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* switch container */
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container2 .box1 {
+    height: 310px;
+    width: 250px;
+    margin: 20px 10px 0 10px;
+    /* border: 1px solid black; */
+}
+
+.container2 .box1 img{
+    height: 150px;
+    width: 210px;
+    margin: 10px 20px 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container2 .box1 img:hover {
+     transform: scale(1.1);
+    transition: 0.5s;
+}
+.container2 .box1 p {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 220px;
+    margin-bottom:-5px;
+    color: skyblue;
+    font-size: 17px;
+}
+.box1 .icons {
+   margin-left: 20px;
+   color: rgb(179, 179, 46);
+}
+.box1 span {
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.image img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Footer section  */
+
+.tap {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    margin-top: 70px;
+    text-align: center;
+    padding: 10px;
+}
+.tap span {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(81, 78, 78);
+    color: #fff;
+    text-align: center;
+}
+.footer span {
+    color: red;
+    font-size: 55px;
+}
+.footer p {
+    font-size: 20px;
+    margin-top: 45px;
+}
+.footer i {
+    font-size: 30px;
+    padding: 40px;
+    cursor: pointer;
+}
+.footer h1 {
+    padding-top: 30px;
+}
+.footer i:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+
+@media (max-width:600px){
+    .nav .menulist {
+        display: none;
+    }
+    .nav #login {
+        display: none;
+    }
+    .nav  main{
+        height: 330px;
+        width: 100%;
+        background-color: aliceblue;
+        border-radius:0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        list-style: none;
+        transition: 0.5s ease-in-out;
+        z-index: 4;
+    } 
+    .nav main .icon i{
+        padding: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .nav main .icon button {
+        height: 40px;
+        width: 70px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-left:10px ;
+    }
+
+    .nav main a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .nav #login {
+        position: absolute;
+        top: 380px;
+
+    }
+    .nav .ham i {
+        display: block;
+        color: black;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 0px;
+    }
+    .nav #search input {
+        position: absolute;
+        width: 90px;
+        top: 18px;
+        left: 130px;
+    }
+    .nav #search i{
+        margin-top: 5px;
+        margin-left: 70px;
+        font-size: 25px;
+    }
+    .nav .hide {
+        left:-550px;
+        transition: 0.5s ease-out;
+    }
+
+    /* Product section */
+
+    .container1 .product .pic1{
+       margin-bottom: 10px;
+    }
+    .container1 button {
+        margin-left: 120px;
+    }
+    .container2 {
+        margin-left: 50px;
+    }
+}
